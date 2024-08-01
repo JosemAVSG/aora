@@ -1,14 +1,27 @@
 import { StyleSheet, Text, View } from 'react-native'
+import { Slot, Stack } from 'expo-router'
 import React from 'react'
 
 const _layout = () => {
   return (
-    <View>
-      <Text>asdfasd</Text>
-    </View>
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{ headerShown: false }}
+      />
+    
+    </Stack>
   )
 }
 
 export default _layout
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#F5FCFF",
+        padding: 10
+    }
+})
